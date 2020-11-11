@@ -1,7 +1,7 @@
 const path=require("path");
 const ExtractTextPlugin=require("extract-text-webpack-plugin");
 
-console.log(path.join(__dirname,"public"));
+//console.log(path.join(__dirname,"public"));
 
 module.exports=(env)=>{
     const isProduction= env==="production";
@@ -10,7 +10,7 @@ module.exports=(env)=>{
     return{
         entry:"./src/app.js",
     output:{
-        path:path.join(__dirname,"public"),
+        path:path.join(__dirname,"public","dist"),
         filename:"bundle.js"
     },
     module:{
@@ -44,7 +44,8 @@ module.exports=(env)=>{
     devtool:isProduction?"source-map":"inline-source-map",
     devServer:{
         contentBase:path.join(__dirname,"public"),
-        historyApiFallback:true
+        historyApiFallback:true,
+        publicPath:"/dist/"
     }
     };
 };
