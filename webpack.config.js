@@ -1,8 +1,6 @@
 const path=require("path");
 const ExtractTextPlugin=require("extract-text-webpack-plugin");
 
-//console.log(path.join(__dirname,"public"));
-
 module.exports=(env)=>{
     const isProduction= env==="production";
     const CSSExtract=new ExtractTextPlugin("styles.css");
