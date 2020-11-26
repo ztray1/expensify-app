@@ -31,6 +31,12 @@ exports[`should correctly render ExpenseSummary with 1 expense 1`] = `
       >
         Add Expense
       </Link>
+      <p
+        className="page-header__note"
+      >
+        <span />
+         expenses are hidden
+      </p>
     </div>
   </div>
 </div>
@@ -67,6 +73,12 @@ exports[`should correctly render ExpenseSummary with mutiple expenses 1`] = `
       >
         Add Expense
       </Link>
+      <p
+        className="page-header__note"
+      >
+        <span />
+         expenses are hidden
+      </p>
     </div>
   </div>
 </div>

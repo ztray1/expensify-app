@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render confirm correctly 1`] = `
+<Modal
+  ariaHideApp={true}
+  bodyOpenClassName="ReactModal__Body--open"
+  className="modal"
+  closeTimeoutMS={0}
+  contentLabel="selected Option"
+  isOpen={true}
+  onRequestClose={[Function]}
+  parentSelector={[Function]}
+  portalClassName="ReactModalPortal"
+  shouldCloseOnOverlayClick={true}
+  shouldFocusAfterRender={true}
+>
+  <h3>
+    Are you sure to remove?
+  </h3>
+  <button
+    className="button button--modal"
+    onClick={[Function]}
+  >
+    Confirm
+  </button>
+  <button
+    className="button button--modal"
+    onClick={[Function]}
+  >
+    cancel
+  </button>
+</Modal>
+`;

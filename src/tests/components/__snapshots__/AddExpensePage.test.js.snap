@@ -19,7 +19,7 @@ exports[`should render AddExpensePage correctly 1`] = `
     className="content-container"
   >
     <ExpenseForm
-      onSubmit={[Function]}
+      onSubmitExpense={[Function]}
     />
   </div>
 </div>

@@ -44,7 +44,7 @@ test("should set note on textarea change",()=>{
 
 test("should call onSubmit prop for valid form submission",()=>{
     const onSubmitSpy=jest.fn();
-    const wrapper=shallow(<ExpenseForm expense={expenses[1]} onSubmit={onSubmitSpy} />);
+    const wrapper=shallow(<ExpenseForm expense={expenses[1]} onSubmitExpense={onSubmitSpy} />);
     wrapper.find("form").simulate("submit",{
         preventDefault:()=>{}
     });

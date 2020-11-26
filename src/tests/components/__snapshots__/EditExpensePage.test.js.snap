@@ -28,7 +28,7 @@ exports[`should render EditExpensePage 1`] = `
           "note": "yes",
         }
       }
-      onSubmit={[Function]}
+      onSubmitExpense={[Function]}
     />
     <button
       className="button button--secondary"
@@ -36,6 +36,14 @@ exports[`should render EditExpensePage 1`] = `
     >
       Remove Expense
     </button>
+    <ConfirmModal
+      handleCancelOption={[Function]}
+      handleConfirmRemoveOption={[Function]}
+      selectedOption={false}
+    />
   </div>
+  <div
+    className="App"
+  />
 </div>
 `;
